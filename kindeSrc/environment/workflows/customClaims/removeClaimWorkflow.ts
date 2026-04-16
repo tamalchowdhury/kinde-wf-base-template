@@ -3,7 +3,6 @@ import {
   WorkflowSettings,
   WorkflowTrigger,
   accessTokenCustomClaims,
-  getEnvironmentVariable,
 } from "@kinde/infrastructure";
 
 // The setting for this workflow
@@ -28,5 +27,5 @@ export default async function Workflow(event: onUserTokenGeneratedEvent) {
   }>()
 
   accessToken.permissions = []
-  accessToken.feature_flags = {}
+  accessToken.feature_flags = null
 }
