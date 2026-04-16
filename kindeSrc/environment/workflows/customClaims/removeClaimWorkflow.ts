@@ -27,6 +27,6 @@ export default async function Workflow(event: onUserTokenGeneratedEvent) {
     feature_flags: Record<string, unknown>
   }>()
 
-  accessToken.permissions = ["Samsu"]
-  accessToken.feature_flags = {"samsu": "kopa"}
+  accessToken.permissions = []
+  accessToken.feature_flags = {}
 }
